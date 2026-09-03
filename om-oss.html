@@ -6,61 +6,161 @@
     <title>Om oss | Bygghjelp1</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="page-shell">
     <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="logo" href="index.html">
-          <img src="assets/external/Bygghjelp1-logo-cropped.png" alt="Bygghjelp1 logo" />
-        </a>
-        <nav aria-label="Hovedmeny">
-          <ul class="nav-links">
-            <li><a href="tjenester.html">Tjenester</a></li>
-            <li><a href="om-oss.html">Om oss</a></li>
-            <li><a href="referanser.html">Referanser</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-          </ul>
-        </nav>
+      <div class="header-bar" data-header-bar>
+        <div class="header-inner">
+          <div class="header-grid">
+            <nav class="nav-left" aria-label="Hovedmeny venstre">
+              <a class="nav-link" data-nav-link href="tjenester.html">Tjenester</a>
+              <a class="nav-link" data-nav-link href="om-oss.html">Om oss</a>
+            </nav>
+            <div class="header-logo-spacer" aria-hidden="true"></div>
+            <nav class="nav-right" aria-label="Hovedmeny høyre">
+              <a class="nav-link" data-nav-link href="referanser.html">Referanser</a>
+              <a class="nav-link" data-nav-link href="kontakt.html">Kontakt</a>
+            </nav>
+          </div>
+          <div class="header-mobile">
+            <div class="header-mobile-spacer" aria-hidden="true"></div>
+            <div class="header-mobile-spacer" aria-hidden="true"></div>
+            <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Åpne meny">
+              <svg data-menu-icon-open xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <svg data-menu-icon-close hidden xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+        </div>
       </div>
+      <a class="site-logo" href="index.html" aria-label="Bygghjelp1">
+        <img src="assets/external/bygghjelp1-logo.png" alt="Bygghjelp1" />
+      </a>
+      <nav class="mobile-nav" data-mobile-nav aria-label="Mobilmeny">
+        <div class="mobile-nav-links container">
+          <a class="nav-link" data-nav-link href="tjenester.html">Tjenester</a>
+          <a class="nav-link" data-nav-link href="om-oss.html">Om oss</a>
+          <a class="nav-link" data-nav-link href="referanser.html">Referanser</a>
+          <a class="nav-link" data-nav-link href="kontakt.html">Kontakt</a>
+        </div>
+      </nav>
     </header>
-    <main class="section section-alt">
-      <div class="container">
-        <h2>Om oss</h2>
-        <p class="section-intro">
-          Vi som driver firmaet er Dag Badendyck og Hans Krøvel. Med over 15 års praktisk erfaring fra egne eiendomsprosjekter bistår vi byggherrer med tryggere beslutninger og bedre gjennomføring.
-        </p>
-        <div class="profiles">
-          <article class="profile-card">
-            <img src="assets/external/Dag foto.jpg" alt="Portrett av Dag Badendyck" />
-            <div class="profile-content">
-              <h3>Dag Badendyck</h3>
-              <p>Tømrerutdannelse/fagbrev. Eiendomsutvikling 2010-2026.</p>
-            </div>
-          </article>
-          <article class="profile-card">
-            <img src="assets/external/Hans foto.jpg" alt="Portrett av Hans Krøvel" />
-            <div class="profile-content">
-              <h3>Hans Krøvel</h3>
-              <p>Juridisk embetseksamen. Eiendomsutvikling 2010-2026.</p>
-            </div>
-          </article>
+
+    <main>
+      <section class="page-hero">
+        <img
+          class="page-hero-home-image"
+          src="assets/external/heyerdahlsvei-hero.jpg"
+          alt="Byggeprosjekt Heyerdahls vei"
+        />
+        <div class="page-hero-overlay" aria-hidden="true"></div>
+        <div class="page-hero-content">
+          <h1>Om oss</h1>
+        </div>
+      </section>
+
+      <section class="intro-section section-sand">
+        <div class="container-narrow text-center">
+          <p class="eyebrow">Litt om oss</p>
+          <h2 class="section-title">Erfaring fra alle aspekter av byggebransjen</h2>
+          <p class="section-intro">
+            Vi som driver firmaet er Dag Badendyck og Hans Krøvel. Med over 15 års praktisk erfaring
+            fra egne eiendomsprosjekter bistår vi byggherrer med tryggere beslutninger og bedre
+            gjennomføring – fra tomt og prosjektering til kontrahering, oppfølging og
+            ferdigstillelse.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section section-white">
+        <div class="container">
+          <div class="container-narrow text-center">
+            <p class="eyebrow">Møt oss</p>
+            <h2 class="section-title">To komplementære fagpersoner</h2>
+            <p class="section-intro">
+              Praktisk byggeerfaring møter struktur og oversikt. Sammen dekker vi hele
+              byggeprosessen.
+            </p>
+          </div>
+
+          <div class="card-grid cols-2" style="margin-top: 2.5rem">
+            <article class="card">
+              <div class="card-image">
+                <img src="assets/external/Dag foto.jpg" alt="Portrett av Dag Badendyck" />
+              </div>
+              <div class="card-body">
+                <h2>Dag Badendyck</h2>
+                <p>
+                  Medgrunnlegger. Tømrerutdannelse/fagbrev. Eiendomsutvikling 2010–2026. Dag har
+                  lang erfaring fra praktisk gjennomføring og kjenner byggeprosesser fra planlegging
+                  til ferdigstillelse.
+                </p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-image">
+                <img src="assets/external/Hans foto.jpg" alt="Portrett av Hans Krøvel" />
+              </div>
+              <div class="card-body">
+                <h2>Hans Krøvel</h2>
+                <p>
+                  Medgrunnlegger. Juridisk embetseksamen. Eiendomsutvikling 2010–2026. Hans bidrar
+                  med struktur, kontraktsforståelse og helhetlig prosjektoversikt gjennom hele
+                  byggeprosessen.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-sand">
+        <div class="container-narrow">
+          <p class="eyebrow text-center">Vårt oppdrag</p>
+          <div class="mission-quote">
+            <p>
+              Uansett behov er målet vårt det samme: å minimere overpris, uforutsette kostnader,
+              byggefeil, forsinkelser og andre fallgruver – slik at prosjektet ditt kan gjennomføres
+              tryggere og mer forutsigbart.
+            </p>
+          </div>
+          <p class="section-intro text-center" style="margin-top: 2rem">
+            Bygghjelp1 er din høyre hånd i byggeprosjektet – uansett om du er privatperson eller
+            profesjonell aktør.
+          </p>
+        </div>
+      </section>
+
+      <section class="cta-band cta-band-green">
+        <div class="container-narrow">
+          <h2>Vil du vite mer?</h2>
+          <p>Ta gjerne kontakt for en uforpliktende samtale om prosjektet ditt.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="kontakt.html">Kontakt oss</a>
+            <a class="btn btn-outline-light" href="referanser.html">Se referanser</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand-block">
+          <img src="assets/external/bygghjelp1-logo.png" alt="Bygghjelp1" />
+          <p>Oslo-området</p>
+          <a href="mailto:kontakt@bygghjelp1.no">kontakt@bygghjelp1.no</a>
+        </div>
+        <div class="footer-contact-box">
+          <h2>Ta kontakt</h2>
+          <p>Fortell oss kort om prosjektet ditt, så tar vi en uforpliktende samtale.</p>
+          <a class="btn btn-primary" href="kontakt.html">Kontakt oss</a>
         </div>
       </div>
-    </main>
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <p class="footer-brand">Bygghjelp1</p>
-          <p class="footer-copy">Bygghjelp1 - din høyre hånd i byggeprosjektet.</p>
-        </div>
-        <div>
-          <p class="footer-title">Kontakt</p>
-          <a class="footer-link" href="mailto:kontakt@bygghjelp1.no">kontakt@bygghjelp1.no</a>
-        </div>
-        <div>
-          <p class="footer-title">Lokasjon</p>
-          <p class="footer-copy">Oslo-området</p>
-        </div>
+      <div class="footer-bottom">
+        <button type="button" data-scroll-top>Til toppen</button>
+        <p>© 2026 Bygghjelp1 · Oslo-området · kontakt@bygghjelp1.no</p>
       </div>
     </footer>
+
+    <script src="site.js"></script>
   </body>
 </html>

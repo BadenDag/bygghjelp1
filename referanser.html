@@ -6,52 +6,136 @@
     <title>Referanser | Bygghjelp1</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="page-shell">
     <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="logo" href="index.html">
-          <img src="assets/external/Bygghjelp1-logo-cropped.png" alt="Bygghjelp1 logo" />
-        </a>
+      <div class="header-bar" data-header-bar>
+        <div class="header-inner">
+          <div class="header-grid">
+            <nav class="nav-left" aria-label="Hovedmeny venstre">
+              <a class="nav-link" data-nav-link href="tjenester.html">Tjenester</a>
+              <a class="nav-link" data-nav-link href="om-oss.html">Om oss</a>
+            </nav>
+            <div class="header-logo-spacer" aria-hidden="true"></div>
+            <nav class="nav-right" aria-label="Hovedmeny høyre">
+              <a class="nav-link" data-nav-link href="referanser.html">Referanser</a>
+              <a class="nav-link" data-nav-link href="kontakt.html">Kontakt</a>
+            </nav>
+          </div>
+          <div class="header-mobile">
+            <div class="header-mobile-spacer" aria-hidden="true"></div>
+            <div class="header-mobile-spacer" aria-hidden="true"></div>
+            <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Åpne meny">
+              <svg data-menu-icon-open xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <svg data-menu-icon-close hidden xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+        </div>
       </div>
-      <nav class="site-menu" aria-label="Hovedmeny">
-        <div class="container">
-          <ul class="menu-links">
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="tjenester.html">Tjenester</a></li>
-            <li><a href="tjenester-privatpersoner.html">Privatpersoner</a></li>
-            <li><a href="tjenester-profesjonelle.html">Profesjonelle</a></li>
-            <li><a href="om-oss.html">Om oss</a></li>
-            <li><a href="priser.html">Priser</a></li>
-            <li><a href="referanser.html">Referanser</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="hva-vi-ikke-bistar-med.html">Hva vi ikke bistår med</a></li>
-          </ul>
+      <a class="site-logo" href="index.html" aria-label="Bygghjelp1">
+        <img src="assets/external/bygghjelp1-logo.png" alt="Bygghjelp1" />
+      </a>
+      <nav class="mobile-nav" data-mobile-nav aria-label="Mobilmeny">
+        <div class="mobile-nav-links container">
+          <a class="nav-link" data-nav-link href="tjenester.html">Tjenester</a>
+          <a class="nav-link" data-nav-link href="om-oss.html">Om oss</a>
+          <a class="nav-link" data-nav-link href="referanser.html">Referanser</a>
+          <a class="nav-link" data-nav-link href="kontakt.html">Kontakt</a>
         </div>
       </nav>
     </header>
-    <main class="section">
-      <div class="container">
-        <h2>Referanser</h2>
-        <p class="section-intro">
-          Eksempler på tidligere prosjekter: Lillengveien, Ringstabekkveien, Åsbrekka, Heyerdahls vei og flere.
-        </p>
-      </div>
+
+    <main>
+      <section class="page-hero">
+        <img src="assets/external/2.jpg" alt="Referanseprosjekter" />
+        <div class="page-hero-overlay" aria-hidden="true"></div>
+        <div class="page-hero-content">
+          <h1>Referanser</h1>
+        </div>
+      </section>
+
+      <section class="intro-section section-sand">
+        <div class="container-narrow text-center">
+          <p class="eyebrow">Referanser</p>
+          <h2 class="section-title">Prosjekter vi har bistått med</h2>
+          <p class="section-intro">
+            Eksempler på tidligere prosjekter: Lillengveien, Ringstabekkveien, Åsbrekka, Heyerdahls
+            vei og flere.
+          </p>
+          <p class="section-intro">
+            Vi har bred erfaring fra alle aspekter av byggebransjen – fra tidlig planlegging til
+            oppfølging i byggetid.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section section-white">
+        <div class="container">
+          <div class="card-grid cols-2">
+            <article class="card">
+              <div class="card-image">
+                <img src="assets/external/2.jpg" alt="Byggeprosjekt" />
+              </div>
+              <div class="card-body">
+                <h2>Lillengveien</h2>
+                <p>Referanseprosjekt – detaljer og bilder kommer.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image">
+                <img src="assets/external/2.jpg" alt="Byggeprosjekt" style="object-position: center 40%" />
+              </div>
+              <div class="card-body">
+                <h2>Ringstabekkveien</h2>
+                <p>Referanseprosjekt – detaljer og bilder kommer.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <h2>Åsbrekka</h2>
+                <p>Referanseprosjekt – detaljer og bilder kommer.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <h2>Heyerdahls vei</h2>
+                <p>Referanseprosjekt – detaljer og bilder kommer.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band cta-band-green">
+        <div class="container-narrow">
+          <h2>Lurer du på om vi kan hjelpe?</h2>
+          <p>Ta kontakt for å høre hvordan vi kan bistå i ditt byggeprosjekt.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="kontakt.html">Kontakt oss</a>
+            <a class="btn btn-outline-light" href="tjenester.html">Se tjenester</a>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <p class="footer-brand">Bygghjelp1</p>
-          <p class="footer-copy">Bygghjelp1 - din høyre hånd i byggeprosjektet.</p>
+      <div class="container footer-main">
+        <div class="footer-brand-block">
+          <img src="assets/external/bygghjelp1-logo.png" alt="Bygghjelp1" />
+          <p>Oslo-området</p>
+          <a href="mailto:kontakt@bygghjelp1.no">kontakt@bygghjelp1.no</a>
         </div>
-        <div>
-          <p class="footer-title">Kontakt</p>
-          <a class="footer-link" href="mailto:kontakt@bygghjelp1.no">kontakt@bygghjelp1.no</a>
+        <div class="footer-contact-box">
+          <h2>Ta kontakt</h2>
+          <p>Fortell oss kort om prosjektet ditt, så tar vi en uforpliktende samtale.</p>
+          <a class="btn btn-primary" href="kontakt.html">Kontakt oss</a>
         </div>
-        <div>
-          <p class="footer-title">Lokasjon</p>
-          <p class="footer-copy">Oslo-området</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <button type="button" data-scroll-top>Til toppen</button>
+        <p>© 2026 Bygghjelp1 · Oslo-området · kontakt@bygghjelp1.no</p>
       </div>
     </footer>
+
+    <script src="site.js"></script>
   </body>
 </html>

@@ -6,71 +6,200 @@
     <title>Tjenester | Bygghjelp1</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="page-shell">
     <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="logo" href="index.html">
-          <img src="assets/external/Bygghjelp1-logo-cropped.png" alt="Bygghjelp1 logo" />
-        </a>
+      <div class="header-bar" data-header-bar>
+        <div class="header-inner">
+          <div class="header-grid">
+            <nav class="nav-left" aria-label="Hovedmeny venstre">
+              <a class="nav-link" data-nav-link href="tjenester.html">Tjenester</a>
+              <a class="nav-link" data-nav-link href="om-oss.html">Om oss</a>
+            </nav>
+            <div class="header-logo-spacer" aria-hidden="true"></div>
+            <nav class="nav-right" aria-label="Hovedmeny høyre">
+              <a class="nav-link" data-nav-link href="referanser.html">Referanser</a>
+              <a class="nav-link" data-nav-link href="kontakt.html">Kontakt</a>
+            </nav>
+          </div>
+          <div class="header-mobile">
+            <div class="header-mobile-spacer" aria-hidden="true"></div>
+            <div class="header-mobile-spacer" aria-hidden="true"></div>
+            <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Åpne meny">
+              <svg data-menu-icon-open xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <svg data-menu-icon-close hidden xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+        </div>
       </div>
-      <nav class="site-menu" aria-label="Hovedmeny">
-        <div class="container">
-          <ul class="menu-links">
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="tjenester.html">Tjenester</a></li>
-            <li><a href="tjenester-privatpersoner.html">Privatpersoner</a></li>
-            <li><a href="tjenester-profesjonelle.html">Profesjonelle</a></li>
-            <li><a href="om-oss.html">Om oss</a></li>
-            <li><a href="priser.html">Priser</a></li>
-            <li><a href="referanser.html">Referanser</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="hva-vi-ikke-bistar-med.html">Hva vi ikke bistår med</a></li>
-          </ul>
+      <a class="site-logo" href="index.html" aria-label="Bygghjelp1">
+        <img src="assets/external/bygghjelp1-logo.png" alt="Bygghjelp1" />
+      </a>
+      <nav class="mobile-nav" data-mobile-nav aria-label="Mobilmeny">
+        <div class="mobile-nav-links container">
+          <a class="nav-link" data-nav-link href="tjenester.html">Tjenester</a>
+          <a class="nav-link" data-nav-link href="om-oss.html">Om oss</a>
+          <a class="nav-link" data-nav-link href="referanser.html">Referanser</a>
+          <a class="nav-link" data-nav-link href="kontakt.html">Kontakt</a>
         </div>
       </nav>
     </header>
-    <main class="section">
-      <div class="container">
-        <h2>Tjenester</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Tjenester til privatpersoner</h3>
-            <p>For selvbyggere og større oppussingsprosjekter med fokus på kostnadskontroll, kvalitetssikring og trygg gjennomføring.</p>
-            <p><a class="hero-link" href="tjenester-privatpersoner.html">Les mer</a></p>
-          </article>
-          <article class="card">
-            <h3>Tjenester til profesjonelle aktører</h3>
-            <p>For eiendomsutviklere og entreprenører som trenger fleksibel kapasitet i perioder med høy belastning.</p>
-            <p><a class="hero-link" href="tjenester-profesjonelle.html">Les mer</a></p>
-          </article>
-          <article class="card">
-            <h3>Priser</h3>
-            <p>Vi gir konkret tilbud etter et uforpliktende møte og vurdering av prosjektets behov.</p>
-            <p><a class="hero-link" href="priser.html">Les mer</a></p>
-          </article>
-          <article class="card">
-            <h3>Hva vi ikke bistår med</h3>
-            <p>Vi er tydelige på avgrensning av tjenestene våre.</p>
-            <p><a class="hero-link" href="hva-vi-ikke-bistar-med.html">Les mer</a></p>
-          </article>
+
+    <main>
+      <section class="page-hero">
+        <img src="assets/external/2.jpg" alt="Byggeprosjekt" />
+        <div class="page-hero-overlay" aria-hidden="true"></div>
+        <div class="page-hero-content">
+          <h1>Våre tjenester</h1>
+        </div>
+      </section>
+
+      <section class="intro-section section-sand">
+        <div class="container-narrow text-center">
+          <p class="eyebrow">Tjenester</p>
+          <h2 class="section-title">Rådgivning gjennom hele byggeprosjektet</h2>
+          <p class="section-intro">
+            Vi tilbyr skreddersydd bistand til privatpersoner og profesjonelle – fra tidlig
+            planlegging til oppfølging i byggetid og ettermarked.
+          </p>
+        </div>
+      </section>
+
+      <section id="privatpersoner" class="feature-split section-white">
+        <div class="feature-split-image">
+          <img src="assets/external/Dag foto.jpg" alt="Tjenester til privatpersoner" />
+        </div>
+        <div class="feature-split-copy">
+          <div class="feature-split-copy-inner">
+            <p class="eyebrow">Privatpersoner</p>
+            <h2 class="section-title">For selvbyggere og større oppussingsprosjekter</h2>
+            <p>
+              Målet er riktig pris, riktig kvalitet og forutsigbar fremdrift – med trygg veiledning
+              gjennom hele prosessen.
+            </p>
+            <p><strong>For selvbyggere:</strong> Bistand med vurdering av tomt, beskrivelser, innhenting av tilbud, oppfølging i byggetid og reklamasjoner.</p>
+            <p><strong>For større oppussingsprosjekter:</strong> Bistand med søknadsplikt, prosjekteringsbehov, beskrivelse til håndverkere, tilbudsevaluering og kvalitetssikring.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="profesjonelle" class="feature-split reverse section-sand">
+        <div class="feature-split-image">
+          <img src="assets/external/Hans foto.jpg" alt="Tjenester til profesjonelle" />
+        </div>
+        <div class="feature-split-copy">
+          <div class="feature-split-copy-inner">
+            <p class="eyebrow">Profesjonelle</p>
+            <h2 class="section-title">For eiendomsutviklere og entreprenører</h2>
+            <p>
+              Fleksibel arbeidskapasitet i perioder med høy belastning – uten langsiktig
+              ansettelsesforpliktelse i din organisasjon.
+            </p>
+            <p><strong>Prosjektkapasitet ved behov:</strong> Vi kan gå inn i avgrensede perioder etter avtale.</p>
+            <p><strong>Praktisk erfaring:</strong> Over 15 års hands-on erfaring fra utvikling, byggesak, kontrahering, oppfølging, salg og ettermarked.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="priser" class="content-section section-white">
+        <div class="container">
+          <div class="container-narrow text-center">
+            <p class="eyebrow">Priser</p>
+            <h2 class="section-title">Tilbud etter uforpliktende møte</h2>
+          </div>
+          <div class="card-grid cols-2" style="margin-top: 2.5rem">
+            <article class="card">
+              <div class="card-body">
+                <h2>For privatpersoner</h2>
+                <p>
+                  Vi vurderer først kort prosjektbeskrivelse og tilbud som er mottatt. Deretter tar
+                  vi et uforpliktende møte og gir konkret tilbud dersom vi ser tydelig verdi for
+                  kunden.
+                </p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <h2>For virksomheter og profesjonelle</h2>
+                <p>
+                  Ingen prosjekter er like. Pris avtales som fastpris eller timepris avhengig av
+                  omfang, varighet og kompleksitet.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="avgrensninger" class="content-section section-sand">
+        <div class="container">
+          <div class="container-narrow text-center">
+            <p class="eyebrow">Avgrensninger</p>
+            <h2 class="section-title">Hva vi ikke bistår med</h2>
+            <p class="section-intro">
+              Vi er tydelige på hva vi kan og ikke kan bidra med, slik at forventningene er klare
+              fra start.
+            </p>
+          </div>
+          <div class="card-grid cols-3" style="margin-top: 2.5rem">
+            <article class="card">
+              <div class="card-body">
+                <h2>Juridisk rådgivning</h2>
+                <p>Vi er ikke et advokatfirma og yter ikke juridisk rådgivning.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <h2>Arkitekt- og ingeniørtjenester</h2>
+                <p>
+                  Avtaler om arkitekt-, ingeniør- og andre prosjekteringstjenester inngås direkte med
+                  aktuelle fagområder.
+                </p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <h2>Utførende håndverkstjenester</h2>
+                <p>
+                  Vi tilbyr ikke selv håndverkstjenester. Avtaler inngås direkte med utførende
+                  entreprenører og håndverkere.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band cta-band-green">
+        <div class="container-narrow">
+          <h2>Usikker på hva du trenger?</h2>
+          <p>Ta kontakt, så hjelper vi deg å finne riktig nivå av bistand for prosjektet ditt.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="kontakt.html">Kontakt oss</a>
+            <a class="btn btn-outline-light" href="om-oss.html">Om oss</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand-block">
+          <img src="assets/external/bygghjelp1-logo.png" alt="Bygghjelp1" />
+          <p>Oslo-området</p>
+          <a href="mailto:kontakt@bygghjelp1.no">kontakt@bygghjelp1.no</a>
+        </div>
+        <div class="footer-contact-box">
+          <h2>Ta kontakt</h2>
+          <p>Fortell oss kort om prosjektet ditt, så tar vi en uforpliktende samtale.</p>
+          <a class="btn btn-primary" href="kontakt.html">Kontakt oss</a>
         </div>
       </div>
-    </main>
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <p class="footer-brand">Bygghjelp1</p>
-          <p class="footer-copy">Bygghjelp1 - din høyre hånd i byggeprosjektet.</p>
-        </div>
-        <div>
-          <p class="footer-title">Kontakt</p>
-          <a class="footer-link" href="mailto:kontakt@bygghjelp1.no">kontakt@bygghjelp1.no</a>
-        </div>
-        <div>
-          <p class="footer-title">Lokasjon</p>
-          <p class="footer-copy">Oslo-området</p>
-        </div>
+      <div class="footer-bottom">
+        <button type="button" data-scroll-top>Til toppen</button>
+        <p>© 2026 Bygghjelp1 · Oslo-området · kontakt@bygghjelp1.no</p>
       </div>
     </footer>
+
+    <script src="site.js"></script>
   </body>
 </html>
