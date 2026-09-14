@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
@@ -67,6 +68,15 @@ a {
   line-height: 1.2;
   font-size: clamp(1.5rem, 3vw, 2.25rem);
   color: var(--text);
+}
+
+.slogan-title {
+  font-size: clamp(1.125rem, 5.4vw, 2.25rem);
+}
+
+.slogan-title span {
+  display: block;
+  white-space: nowrap;
 }
 
 .section-intro {
@@ -745,9 +755,12 @@ main {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(120, 113, 108, 0.35);
   padding: 2rem 0;
   text-align: center;
+}
+
+.footer-main + .footer-bottom {
+  border-top: 1px solid rgba(120, 113, 108, 0.35);
 }
 
 .footer-bottom button {
