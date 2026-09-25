@@ -274,6 +274,28 @@ main {
   object-position: center 74%;
 }
 
+.page-hero-om-oss-image {
+  object-position: center top;
+}
+
+.page-hero-tjenester-image {
+  object-position: center 38%;
+}
+
+.page-hero-referanser-image {
+  object-position: center center;
+}
+
+.page-hero-kontakt-image {
+  object-position: center 40%;
+}
+
+@media (max-width: 1023px) {
+  .page-hero-om-oss-image {
+    object-position: center 42%;
+  }
+}
+
 @media (max-width: 1024px) {
   .page-hero-home-image {
     object-position: right 74%;
