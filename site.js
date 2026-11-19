@@ -10,8 +10,8 @@
       mobileMenuOpen = mobileNav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", String(mobileMenuOpen));
       if (iconOpen && iconClose) {
-        iconOpen.hidden = mobileMenuOpen;
-        iconClose.hidden = !mobileMenuOpen;
+        iconOpen.toggleAttribute("hidden", mobileMenuOpen);
+        iconClose.toggleAttribute("hidden", !mobileMenuOpen);
       }
     });
   }
