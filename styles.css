@@ -818,3 +818,75 @@ main {
     display: none;
   }
 }
+
+/* Stedssider og bunnlenker (2026-11-19) */
+
+.page-hero-lead {
+  margin: 1.25rem 0 0;
+  max-width: 40rem;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  line-height: 1.5;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.page-hero-local-image {
+  object-position: center 55%;
+}
+
+.section-intro a,
+.local-copy a {
+  color: var(--green);
+}
+
+.local-copy {
+  width: min(42rem, 92vw);
+  margin: 0 auto;
+}
+
+.local-copy h2 {
+  margin: 2.75rem 0 1rem;
+}
+
+.local-copy h2:first-child {
+  margin-top: 0;
+}
+
+.local-copy p,
+.local-copy li {
+  font-size: 0.9375rem;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.local-copy ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.local-copy li {
+  margin: 0 0 0.6rem;
+}
+
+.local-copy li strong {
+  color: var(--text);
+}
+
+.footer-areas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+  margin: 0 auto 1.5rem;
+  padding: 0 1rem;
+}
+
+.footer-areas a {
+  font-size: 0.8125rem;
+  color: #374151;
+  text-decoration: none;
+}
+
+.footer-areas a:hover {
+  color: var(--green);
+}
