@@ -174,6 +174,10 @@ a {
   height: 1.5rem;
 }
 
+.menu-toggle svg[hidden] {
+  display: none;
+}
+
 .mobile-nav {
   display: none;
   background: var(--header-bg);
